@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>AI.lk</title>
+        <style>
+
+            .picture{
+                width: 1000px;
+                height: 500px;
+                border: dashed;
+                border: #000;
+                border-radius: 30px;
+            }
+            
+            .intro{
+                font-size:100px ;
+                background-image: url('https://colourlex.com/wp-content/uploads/2021/02/vine-black-painted-swatch-1080x675.jpg');
+                color: #f0eaea;
+                padding: 40px;
+                }
+
+            .definition{
+                font-size: 40px;
+                text-align: justify;
+
+            }
+            
+            .type1{
+                font-size: 40px;
+            }
+
+            h2{
+                font-size: 60px;
+                 font-weight: 600;
+                color: #fff;
+                background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+                padding: 12px 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                transition: all 0.3s ease;
+                text-align: center;
+                margin: 15px 0
+
+            }
+
+            .type2{
+                font-size: 60px;
+
+            }
+
+             th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            }
+            td{
+                font-size: 50px;
+            }
+
+            th{
+                font-size: 70px;
+                background-color: #a7a771;
+            }
+
+            .Applications{
+                font-size: 40px;
+            }
+
+            .conclusion{
+                font-size: 50px;
+            }
+
+            .exImages{
+                height: 200px;
+                width: auto;
+                border-radius: 35px;
+                border: #000;
+                border-style: solid;
+            }
+
+            .names{
+                font-size: 35px;
+                font-weight: bolder;
+            }
+
+            .example{
+                font-size: 40px;
+            }
+
+            .a{
+                color: #e47b19;
+             }
+
+             .b{
+                color: #e47b19;
+             }
+
+             .c{
+                color: #e47b19;
+             }
+
+             .d{
+                color: #e47b19;
+             }
+
+             .e{
+                color: #e47b19;
+             }
+
+             .p1{
+                color: #e47b19;
+             }
+
+             .p2{
+                color: #e47b19;
+             }
+
+             .define{
+                font-size: 40px;
+             }
+
+             .other{
+                font-size: 40px;
+             }
+
+             .end{
+                font-size: 30px;
+                background-color: #000000c7;
+             }
+
+             .extra{
+                font-size: 20px
+             }
+
+             .footer{
+                background-color: #000;
+                color: white;
+                padding: 40px 20px;
+                border-top: solid orange;
+             }
+
+             .footer-container{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+             }
+
+             .footer-left,
+             .footer-middle,
+             .footer-right{
+                flex: 1;
+                min-width: 250px;
+                margin: 10px;
+             }
+
+            .footer-left h2 {
+                margin: 5px 0;
+                font-size: 1.2rem;
+            }
+
+            .footer-left p{
+                margin: 2px 0;
+            }
+
+            .footer-left p{
+                margin: 2px 0;
+            }
+
+            .footer-middle{
+                display: flex;
+                gap: 50px;
+            }
+
+            .footer-middle ul {
+                 list-style: none;
+                 padding: 0;
+            }
+
+            .footer-middle li {
+                margin: 6px 0;
+                color: #ccc;
+                cursor: pointer;
+            }
+
+            .footer-middle li:hover {
+                color: orange;
+            }
+
+            .footer-right p {
+                line-height: 1.6;
+                color: #ccc;
+            }
+
+            .social-icons a {
+                color: white;
+                margin-right: 10px;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            .social-icons a:hover {
+                color: orange;
+            }
+
+            .highlight {
+                 color: orange;
+            }
+
+            .copyright {
+                margin-top: 20px;
+                font-size: 0.9rem;
+                color: #ccc;
+            }
+            
+            .logo{
+                width: 100px;
+                height: 100px;
+            }
+
+            .image1,
+            .image2{
+                width: 300px;
+                height: 300px;
+                margin: 20px;
+                border: black;
+                border-radius: 30px;
+            }
+          
+            .fade-in {
+                opacity: 0;
+                animation: fadeIn 1.5s ease-in forwards;
+                color: #880e0ac7;
+                font-size: 100px;
+                color: #7258b9c7;
+                text-align: center;
+                }
+
+             @keyframes fadeIn {
+                 to {
+                 opacity: 1;
+              } 
+            }
+
+            .myImage{
+                width: 200px;
+                height: 200px;
+            }
+
+   
+           
+             #hiddenImage {
+                 display: none;             
+                max-width: 1000px; 
+                height: auto;
+                border: 5px solid #00509e; 
+                border-radius: 50px;
+                margin-top: 20px;
+            }
+
+            #hidden{
+                  display: none;             
+                max-width: 1000px; 
+                height: auto;
+                border: 5px solid #00509e; 
+                border-radius: 50px;
+                margin-top: 20px;
+            }
+
+             button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #ff9e16; 
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+             button:hover {
+               background-color: #e58d12;
+             }
+
+             .future{
+                height: 300px;
+                width: auto;
+                border-radius: 30px;
+                border: #000;
+                border: solid;
+             }
+
+             .news{
+                 height: 300px;
+                width: auto;
+                border-radius: 30px;
+                border: #000;
+                border: solid;
+             }
+
+             .conclusionImage{
+                height: 300px;
+                width: auto;
+                border-radius: 30px;
+                border: #000;
+                border: solid;
+             }
+
+
+               
+
+                .image-row img {            
+                border-radius: 30px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                transition: transform 0.3s;
+                }
+
+                .image-row img:hover {
+                transform: scale(1.05);  
+                }
+
+                header{
+                 background: linear-gradient(to right, #ff85a2, #ffb3c6);
+                color: #ffffff;
+                text-align: center;
+                padding: 50px 20px;
+    
+                }
+
+                 section {
+                max-width: 1100px;
+                margin: 40px auto;
+                background: #d66dae;
+                padding: 40px;
+                border-radius: 20px;
+                box-shadow: 0 0 15px rgba(0,0,0,0.1);
+                }
+
+              body {
+                font-family: "Poppins", sans-serif;
+                background-color: #7ac0e0;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                line-height: 1.7;
+                }
+   
+
+
+        </style>
+        <script>
+
+            alert('Welcome to the website of Yasith, Methul, Kevan')
+
+          
+    
+
+        </script>
+
+    </head>
+
+    <body>
+        <marquee class="names">Yasith,Kevon,Methul</marquee>
+
+       <header>
+        <h1 class="fade-in"><u>Welcome to AI world</u></h1> 
+        </header>
+
+        <section>
+       <div class="image-row">
+
+        <p class="intro">Explore the future with Artificial Intelligence. Learn what it is, how it works, and how it is shaping our world today.</p>
+        <img class="picture" src="https://www.technewsworld.com/wp-content/uploads/sites/3/2025/02/humanoid-robot-programming-code.jpg">
+        <h2><u>1.A simple definition for <b><i>Artificial Interligence</u></i></b></h2>
+        <p class="definition">AI (Artificial Intelligence) is the ability of machines or computers to perform tasks that normally require human intelligence, like learning, solving problems, or understanding language.</p>
+        <a href="https://chatgpt.com" class="example">Visit examples for AI</a>
+
+        <h2><u>2.How AI works</u></h2>
+            <ul class="define">
+            <li><p class="definition">AI uses data and algorithms to learn from experience.</p></li>
+            <li><p class="definition">It uses techniques like <i>Machine Learning and Neural Networks.</i></p></li>
+            </ul>
+        <h2><u>3.Types of <b><i>Artificial Interligence</u></i></b></h2>
+
+        <table>
+                       <thead>
+                <tr>
+                    <th>Type of AI</th>
+                    <th>Definition</th>
+                    <th>example AI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Narrow AI</td>
+                    <td> Performs a single task</td>
+                    <td> <a href="https://voice.ai" >A Voice AI</a> </td>
+
+                </tr>
+
+                <tr>
+                    <td> General AI</td>
+                    <td> Can perform any intellectual task like a human.</td>
+                    <td> <a href="https://en.wikipedia.org ">A General AI</a></td>
+                </tr>
+
+                <tr>
+                    <td> Super AI</td>
+                    <td> Hypothetical AI smarter than humans.</td>
+                    <td><a href="https://github.com/Athena-AI-Lab/athena-core ">A Super AI</a></td>
+                </tr>
+            </tbody>
+        </table>
+                
+        <h2><u>4.Applications of <b><i>Artificial Interligence</u></i></b></h2>
+        
+        <ul class="Applications">
+                <li><p class="a"> Healthcare</p>: Diagnosing diseases, robotic surgery</li>
+                <img class="exImages" src="https://hospitalsmagazine.com/wp-content/uploads/2025/03/Artificial-Intelligence-in-Healthcare.jpg" alt="Healthcare">
+               
+                <li><p class="b">Education</p>: Smart tutoring, grading automation</li>
+                <img class="exImages" src="https://datahubanalytics.com/wp-content/uploads/2024/10/dha-ai-education-blog.png" alt="Education" >
+               
+                <li><p class="c">Business</p>: Chatbots, data analysis </li>
+                <img class="exImages" src="https://emerj.com/wp-content/uploads/2018/11/AI-business.jpg" alt="Business">
+               
+                <li><p class="d">Transport</p> Self-driving cars  </li>
+                <img class="exImages" src="https://miro.medium.com/1*5eX5JpuKV1Wd7sbFdHmhJw.jpeg" alt="Transport">
+                
+                <li><p class="e">Entertainment</p>: Personalized recommendations </li>
+                <img class="exImages" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6quRQejH6nU-eWVdXn29i5_faeBcauLsWA&s" alt="Entertainment">
+        </ul>       
+               
+        <h2><u>5.Latest News</u></h2>
+
+        <ul class="define">
+            <li>
+                Stay updated with AI breakthroughs—like ChatGPT, self-driving technology, and AI-generated art.
+            </li>
+        </ul>
+
+        <img class="news" src="https://ideas.darden.virginia.edu/sites/default/files/styles/full_width_1024px_5_3_/public/2024-09/AI%20ART%20ITA.jpg?itok=CIaF2iIX">
+
+        <h2>6.Future of AI</h2>
+
+            <ul class="define">
+            <li><p class="definition">AI will become more powerful but needs ethical use.</p></li>
+            <li><p class="definition">Humans and AI will work together.</i></p></li>
+            </ul>
+
+            <img class="future" src="https://techvidvan.com/tutorials/wp-content/uploads/2020/04/future-of-AI.jpg">
+
+        <h2><u>7.Benefits & Risks</u></h2>
+        
+        <ul class="other">
+            <li><p class="p1">Benefits</p> Speed, accuracy, 24/7 operation</li> 
+            <img class="exImages" src="https://www.intuit.com/blog/wp-content/uploads/2020/12/2442_move-ai-off-your-roadmap_ashok-blog-4-image.webp?w=600&h=630&crop=1" alt="Speed"> 
+           
+            <li><p class="p2">Risks</p> Job loss, bias, privacy concerns</li>
+             <img class="exImages" src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/uploads/2024-02/434754f8-f289-4986-a379-277ab24dfc68.jpg" alt="Job loss"> 
+        </ul>
+
+        <h2>8.Conclusion</h2>
+
+        <ul class="conclusion">
+            <li>AI is shaping the future — let’s use it wisely!</li>
+        </ul>
+
+        <img class="conclusionImage" src="https://www.conclusion.nl/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F33413%2F1725008244-responsible-ai-assessment.jpg%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26h%3D475%26w%3D800&w=3840&q=80">
+
+        <h2>9.Images</h2>
+        
+        <button id="showImage">Click for the image</button>
+        <button id="showImageButton">click for the image</button>
+        
+        <img 
+            id="hiddenImage"
+            src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg"
+            alt="myImage"
+            >
+
+        <img
+            id="hidden"
+            src="https://www.nice.com/_next/image?url=https%3A%2F%2Fresources.nice.com%2Fwp-content%2Fuploads%2F2024%2F08%2Fillustration-of-robotic-process-automation-and-artificial-intelligence.webp&w=3840&q=80"
+            alt="myImage"
+            >
+
+        </div>
+       <script>
+              
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const button = document.getElementById('showImageButton');
+            const image = document.getElementById('hiddenImage');
+
+           
+            button.addEventListener('click', function() {
+                
+                image.style.display = 'block'; 
+                button.textContent = 'Image Revealed!';
+            });
+        });
+               
+              document.addEventListener('DOMContentLoaded', function() {
+            
+            const button = document.getElementById('showImage');
+            const image = document.getElementById('hidden');
+
+           
+            button.addEventListener('click', function() {
+                
+                image.style.display = 'block'; 
+                button.textContent = 'Image Revealed!';
+            });
+        });
+       
+
+       </script>
+
+        <marquee class="names">THANK YOU FOR WATCHING....</marquee>
+
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo">
+                   <i class="i"></i> 
+                <h1>AI.LK</h1>
+                <p>A school project</p>
+            </div>
+            <p class="paragraph"> © 2025 by AI.lk a school project. Powered and secured by <span class="highlight">Yasith, Methul, Kevan</span></p>
+            </div>
+
+            <div class="footer-middle">
+                <ul>
+                    <li>A simple definition for Artificial Interligence</li>
+                    <li>Types of Artificial Interligence</li>
+                    <li>Applications of Artificial Interligence</li>
+                    <li>Latest News</li>
+                    <li>Benefits & Risks</li>
+                </ul>
+
+                <ul>
+                    <li>Contact us</li>
+                    <li>About AI</li>
+                    <li>School Project</li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <p>
+                    Mahanelubawa,<br>
+                    Hidogama,<br>
+                    Anuradhapura<br> <span class="highlight">0777228955/ 0710607080/ 0710150686</span>
+                </p>
+            </div>
+
+            <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+        </div>
+        </footer>
+       
+    </body>
+
+</html>
